@@ -83,10 +83,10 @@ module RailsSettings
 
               value
             end
+          end
 
-            define_singleton_method("#{key}_setting_type") do |value|
-              type
-            end
+          define_singleton_method("#{key}_setting_type") do
+            type
           end
 
           if type == :boolean
